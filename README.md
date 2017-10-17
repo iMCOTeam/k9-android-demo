@@ -2,22 +2,24 @@ Development tools
 -----
 [Android Studio](https://developer.android.com/studio/index.html)
 
+
 Dependencies
 -----
 [k9-android-sdk](https://github.com/iMCOTeam/k9-android-sdk) 
 
+
 Get Started
 -----
-* Init  SDK in your Application
+* Init SDK in your Application
 ```
 CommandManager.init(Context context);
 ```
 
-* All Connect command in ConnectManager.java.eg :
+* All connection commands in `ConnectManager.java`. e.g:
 ```
 ConnectManager.getInstance().connect(Mac_address);
 ```
-* The response of all  Connect command  in ConnectCallback.java, you need implement it , eg : 
+* The response of all connect command  in `ConnectCallback.java`, you need to implement it, e.g: 
 ```
  private ConnectCallback mCallback = new ConnectCallback() {
         @Override
@@ -34,7 +36,7 @@ Register :
 ```
 ConnectManager.getInstance().registerCallback(mCallback);
 ```
-* All the commands that interact with the band are in the CommandManager.java; eg:
+* All the commands that interact with the band are in the `CommandManager.java`. e.g:
 ```
 	// Get the name of the current band
         CommandManager.getDeviceName(new SendCommandCallback() {
@@ -56,7 +58,7 @@ ConnectManager.getInstance().registerCallback(mCallback);
         });
     }
 ```
-* The response of all interactive commands in CommandCallback.java. you need implement some method for you need,eg:
+* The response of all interactive commands in `CommandCallback.java`. you need implement some methods for you need,e.g:
 ```
  CommandCallback mCallback = new CommandCallback() {
             @Override
