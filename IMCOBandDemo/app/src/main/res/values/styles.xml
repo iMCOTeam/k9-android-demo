@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--兼容Api 21之前的版本 -->
+        <item name="overlapAnchor">false</item>
+        <!-- Api 21-->
+        <item name="android:overlapAnchor">false</item>
+    </style>
+
+
+    <!--<style name="Progress_bar" parent="Theme.AppCompat.Light.Dialog.Alert"/>-->
+
+    <!--<style name="Theme.ToolBar.Base" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="android:textSize">20sp</item>-->
+        <!--<item name="android:textColorPrimary">@android:color/holo_red_dark</item>-->
+        <!--&lt;!&ndash;s设置Menu菜单的背景色&ndash;&gt;-->
+        <!--<item name="android:itemBackground">@color/gray</item>-->
+        <!--&lt;!&ndash;设置menu菜单不遮挡actionbar&ndash;&gt;-->
+        <!--<item name="actionOverflowMenuStyle">@style/OverflowMenu</item>-->
+
+    <!--</style>-->
+
+    <!--<style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">-->
+        <!--&lt;!&ndash;兼容Api 21之前的版本 &ndash;&gt;-->
+        <!--<item name="overlapAnchor">false</item>-->
+        <!--&lt;!&ndash; Api 21&ndash;&gt;-->
+        <!--<item name="android:overlapAnchor">false</item>-->
+    <!--</style>-->
+</resources>

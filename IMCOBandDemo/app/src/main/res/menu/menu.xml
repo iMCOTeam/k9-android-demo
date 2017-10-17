@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_scan"
+        android:orderInCategory="3"
+        android:title="@string/menu_scan"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_stop"
+        android:orderInCategory="3"
+        android:title="@string/menu_stop"
+        app:showAsAction="ifRoom|withText" />
+
+        <group android:id="@+id/rssi"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/rssi_30"
+                android:orderInCategory="1"
+                android:title="30" />
+            <item
+                android:id="@+id/rssi_40"
+                android:orderInCategory="1"
+                android:title="40" />
+            <item
+                android:id="@+id/rssi_50"
+                android:orderInCategory="1"
+                android:title="50" />
+            <item
+                android:id="@+id/rssi_60"
+                android:orderInCategory="1"
+                android:title="60" />
+            <item
+                android:id="@+id/rssi_70"
+                android:orderInCategory="1"
+                android:title="70" />
+            <item
+                android:id="@+id/rssi_80"
+                android:orderInCategory="1"
+                android:title="80"/>
+
+            <item
+                android:id="@+id/rssi_all"
+                android:orderInCategory="1"
+                android:title="@string/scan_all"
+                android:checked="true"/>
+        </group>
+
+
+</menu>

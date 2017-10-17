@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imco.mvp.scan.ScanActivity">
+    <EditText
+        android:id="@+id/et_scan_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/scan_filter"
+        android:maxEms="10" />
+
+    <TextView
+        android:id="@+id/tv_rssi_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:text="@string/scan_all"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_rssi_filter"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="Rssi Filter :"
+        android:textSize="16sp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvScanDevices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

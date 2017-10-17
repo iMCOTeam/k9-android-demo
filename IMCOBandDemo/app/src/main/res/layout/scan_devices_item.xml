@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="29sp"
+        android:text="devicesName"/>
+    <TextView
+        android:id="@+id/tv_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_device_name"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+
+        android:text="devices mac "/>
+    <TextView
+        android:id="@+id/tv_rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:textSize="29sp"
+        android:text="rssi"/>
+</RelativeLayout>

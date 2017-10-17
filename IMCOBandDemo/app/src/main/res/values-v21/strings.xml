@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intelligent_ant_lost">智能防丢</string>
+    <string name="h_v_switch">横竖屏切换</string>
+    <string name="setting">设置</string>
+    <string name="request">请求</string>
+    <string name="query_functions">支持功能查询</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.imco.model">
+
+    <!--  摇一摇拍照权限  -->
+      
+    <uses-permission android:name="android.permission.CAMERA" />
+      
+        
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+     
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--
+        TYPE_SYSTEM_ALERT need permission SYSTEM_ALERT_WINDOW, this permission is hard to get up to android6.0
+        For detail: http://blog.csdn.net/chenlove1/article/details/52047105
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    -->
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--  挂断手机的权限  -->
+      
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+     
+    <!--  读取手机状态的权限  -->
+      
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+     
+    <!--  读取手机联系人  -->
+      
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+     
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+     
+    <!--  避免部分Android6.0手机无法scan到设备  -->
+     
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+     
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+     
+    <application
+        android:name="com.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.imco.mvp.scan.ScanActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.imco.mvp.main.MainActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <service android:name="com.imco.dfu.DfuService" />
+
+    </application>
+
+</manifest>
