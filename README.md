@@ -19,7 +19,7 @@ CommandManager.init(Context context);
 ```
 ConnectManager.getInstance().connect(Mac_address);
 ```
-* The response of all connect command  in `ConnectCallback.java`, you need to implement it, e.g: 
+* The response of all connect command  in `ConnectCallback.java`, you need to implement it. e.g: 
 ```
  private ConnectCallback mCallback = new ConnectCallback() {
         @Override
@@ -58,7 +58,7 @@ ConnectManager.getInstance().registerCallback(mCallback);
         });
     }
 ```
-* The response of all interactive commands in `CommandCallback.java`. you need implement some methods for you need,e.g:
+* The response of all interactive commands in `CommandCallback.java`. you need implement some methods for you need. e.g:
 ```
  CommandCallback mCallback = new CommandCallback() {
             @Override
