@@ -1,5 +1,0 @@
-把根目录下的gradle.properties中的：
-RELEASE_REPOSITORY_URL=file:///home/mai/work/k9-android-sdk
-SNAPSHOT_REPOSITORY_URL=file:///home/mai/work/k9-android-sdk
-
-改回git仓库对应你的本地的路径

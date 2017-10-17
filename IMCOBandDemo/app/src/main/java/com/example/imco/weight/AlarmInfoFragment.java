@@ -15,7 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TimePicker;
 
 import com.example.imco.model.R;
-import com.imco.interactivelayer.manager.Flags;
+import com.imco.interactivelayer.Flags;
 
 public class AlarmInfoFragment extends DialogFragment {
     private OnSaveListener mListener;

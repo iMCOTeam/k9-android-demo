@@ -32,10 +32,10 @@ import com.example.utils.LogUtils;
 import com.imco.dfu.OtaCallback;
 import com.imco.dfu.OtaProxy;
 import com.imco.dfu.network.bean.AllFwResultBean;
+import com.imco.interactivelayer.Flags;
 import com.imco.interactivelayer.bean.AlarmClockBean;
 import com.imco.interactivelayer.bean.FunctionsBean;
 import com.imco.interactivelayer.manager.CommandManager;
-import com.imco.interactivelayer.manager.Flags;
 
 import java.util.ArrayList;
 import java.util.List;
